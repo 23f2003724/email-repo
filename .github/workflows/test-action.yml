@@ -1,0 +1,15 @@
+name: Simple Test Action
+
+on:
+  workflow_dispatch:   # Allows manual trigger
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: 23f2003724@ds.study.iitm.ac.in
+        run: echo "Hello, GitHub Actions!"
